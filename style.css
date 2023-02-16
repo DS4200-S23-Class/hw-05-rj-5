@@ -1,0 +1,28 @@
+body {
+	font-family: Arial;
+}
+
+/* Centered the h1 headers */
+h1 {
+  text-align: center;
+}
+
+/* Centered of h2 headers */
+h2 {
+	text-align: center;
+}
+
+/* Use FlexBox to create two columns and customize */
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.left {
+  flex: 60%;
+}
+
+.right {
+  flex: 40%;
+}
