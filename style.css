@@ -7,7 +7,7 @@ h1 {
   text-align: center;
 }
 
-/* Centered of h2 headers */
+/* Centered the h2 headers */
 h2 {
 	text-align: center;
 }
@@ -26,12 +26,11 @@ h2 {
   flex: 40%;
 }
 
-/* Adjust the length of placeholder for x */
+/* Adjust the length of placeholders */
 #cx {
   width: 12ch;
 }
 
-/* Adjust the length of placeholder for y */
 #cy {
   width: 12ch;
 }
@@ -54,6 +53,7 @@ button {
   stroke: skyblue;
 }
 
+/* Initalize tooltip styles */
 .tooltip {
   position: absolute;
   background-color: grey;
@@ -61,6 +61,7 @@ button {
   padding: 5px;
 }
 
+/* Initalize colors for points and bars in plots */
 .point {
   fill: lightseagreen;
 }
