@@ -18,11 +18,32 @@ h2 {
   flex-direction: row;
 }
 
-
 .left {
   flex: 60%;
 }
 
 .right {
   flex: 40%;
+}
+
+/* Adjust the length of placeholder for x */
+#cx {
+  width: 12ch;
+}
+
+/* Adjust the length of placeholder for y */
+#cy {
+  width: 12ch;
+}
+
+/* Customerize the button */
+button {
+  font-family: Arial;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  border-color: royalblue;
+  border-radius: 5px;
+  border-style: double;
+  padding: 10px;
 }

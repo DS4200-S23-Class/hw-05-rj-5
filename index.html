@@ -17,10 +17,41 @@
 
     <h1>hw-05: Interactive Graph with D3</h1>
 
+    <div class='container'>
 
-    <!-- link javascript -->
-    <script src='js/main.js'></script>
+        <!-- create the left column with scatter plot -->
+        <div class='left'>
 
+        </div>
+
+        <!-- create the right column to allow user input the coordinates -->
+        <div class='right'>
+
+            <div id='selected-point'>
+                <!-- The coordinate of the clicked point is: -->
+            </div>
+
+            <div class='new-point'>
+
+                <!-- asks for user inputs -->
+                <p>Enter x-coordinate for the point you want to add: (0-10)
+                    <br>
+                    <input type="number" id="cx" placeholder="x-coordinate" min="0" max="10">
+                </p>
+
+                <p>Enter y-coordinate for the point you want to add: (0-10)
+                    <br>
+                    <input type="number" id="cy" placeholder="y-coordinate" min="0" max="10">
+                </p>
+
+                <!-- button to add point -->
+                <button type="button" id ="button">Add a New Point</button>
+
+            </div>
+                
+        </div>
+
+    </div>
 
     <!-- acknowledgement part -->
     <h2>Acknowledgements</h2>
@@ -36,7 +67,7 @@
     </div>
 
     <!-- register the javascript -->
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 
