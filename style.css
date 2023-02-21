@@ -62,9 +62,9 @@ button {
 }
 
 .point {
-  fill: green;
+  fill: lightseagreen;
 }
 
-.pointover {
-  fill: lightcoral;
+.bar {
+  fill: lightseagreen;
 }
