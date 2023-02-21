@@ -47,3 +47,24 @@ button {
   border-style: double;
   padding: 10px;
 }
+
+/* A class called in the javascript to toggle the border */
+.selected {
+  stroke-width: 4px;
+  stroke: skyblue;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: grey;
+  border: solid;
+  padding: 5px;
+}
+
+.point {
+  fill: green;
+}
+
+.pointover {
+  fill: lightcoral;
+}
