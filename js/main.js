@@ -6,7 +6,6 @@ const MARGINS = {left: 50, right: 50, top: 50, bottom: 50}
 const VIS_HEIGHT = FRAME_HEIGHT - MARGINS.top - MARGINS.bottom
 const VIS_WIDTH = FRAME_WIDTH - MARGINS.left - MARGINS.right
 
-
 // Frame1: scatter plot
 const FRAME1 = d3.select("#vis1") 
 					.append("svg")
@@ -45,13 +44,13 @@ function scattor_plot(){
 				.attr('transform', 'translate(' + MARGINS.left + "," + 
 					(VIS_HEIGHT + MARGINS.top) + ')')
 				.call(d3.axisBottom(X_SCALE).ticks(10))
-					.attr('font-size', "20px");
+					.attr('font-size', "15px");
 
 		FRAME1.append("g")
 				.attr('transform', 'translate(' + MARGINS.top + "," + 
 					  MARGINS.left + ')')
 				.call(d3.axisLeft(Y_SCALE).ticks(10))
-					.attr('font-size', "20px");
+					.attr('font-size', "15px");
 
 		// event functions
 		// change the colors of points when hovering
@@ -91,11 +90,11 @@ function scattor_plot(){
 
 	        // create new point object
 	        FRAME1.append("circle")
-	                    .attr("cx", X_SCALE(parseInt(new_x)) + MARGINS.left)
-	                    .attr("cy", MARGINS.top + (Y_SCALE(parseInt(new_y))))
-	                    .attr("r", 8)
-	                    .attr("class", "point")
-	                    // add event listener to new point
+	                .attr("cx", X_SCALE(parseInt(new_x)) + MARGINS.left)
+	                .attr("cy", MARGINS.top + (Y_SCALE(parseInt(new_y))))
+	                .attr("r", 8)
+	                .attr("class", "point")
+	                	// add event listener to new point
 						.on('mouseover', handleMouseover)
 						.on('mouseleave', handleMouseleave)
 						.on('click', handleMouseclick);
@@ -146,17 +145,17 @@ function bar_plot() {
 				.attr('transform', 'translate(' + MARGINS.left + "," + 
 						(VIS_HEIGHT + MARGINS.top) + ')')
 				.call(d3.axisBottom(X_SCALE2).ticks(10))
-						.attr('font-size', "20px");
+						.attr('font-size', "15px");
 
 		FRAME2.append("g")
 				.attr('transform', 'translate(' + MARGINS.top + "," + 
 						MARGINS.left + ')')
 				.call(d3.axisLeft(Y_SCALE2).ticks(10))
-						.attr('font-size', "20px");
+						.attr('font-size', "15px");
 
 		// add tooltip object
 		const TOOLTIP = d3.select('#vis2')
-						.append('div')
+							.append('div')
 							.attr('class', 'tooltip')
 							.style('opacity', 0);
 
